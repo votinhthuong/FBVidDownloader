@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Facebook Video Downloader",
+  "description": "This extension allows the user to download video of the current Facebook page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [ "tabs", "webRequest", "http://*/*", "https://*/*", "cookies","\u003Call_urls>","http://facebook.com/",
+    "https://facebook.com/", "webRequestBlocking", "unlimitedStorage", "storage", "management", "downloads","displaySource" ],
+  "content_security_policy": "connect-src *; script-src 'self' https://www.google-analytics.com https://cdn.mxpnl.com; object-src 'self'"
+
+}
